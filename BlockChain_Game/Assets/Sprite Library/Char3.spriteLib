@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: all
+    m_Hash: 991457757
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: arm_front
+      m_Hash: 1812206920
+      m_Sprite: {fileID: -2503901101856274509, guid: 413f352304b7f024f90153819d730365, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2503901101856274509, guid: 413f352304b7f024f90153819d730365, type: 3}
+    - m_Name: head
+      m_Hash: -1477183844
+      m_Sprite: {fileID: 4940284476972518593, guid: 413f352304b7f024f90153819d730365, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4940284476972518593, guid: 413f352304b7f024f90153819d730365, type: 3}
+    - m_Name: body
+      m_Hash: -609743950
+      m_Sprite: {fileID: 1979756191773663755, guid: 413f352304b7f024f90153819d730365, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1979756191773663755, guid: 413f352304b7f024f90153819d730365, type: 3}
+    - m_Name: leg_front
+      m_Hash: 1329960291
+      m_Sprite: {fileID: -3460741989127981293, guid: 413f352304b7f024f90153819d730365, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -3460741989127981293, guid: 413f352304b7f024f90153819d730365, type: 3}
+    - m_Name: leg_back
+      m_Hash: -657428468
+      m_Sprite: {fileID: -3112358916523555811, guid: 413f352304b7f024f90153819d730365, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -3112358916523555811, guid: 413f352304b7f024f90153819d730365, type: 3}
+    - m_Name: arm_back
+      m_Hash: 1077404923
+      m_Sprite: {fileID: 4169324436649359983, guid: 413f352304b7f024f90153819d730365, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4169324436649359983, guid: 413f352304b7f024f90153819d730365, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 6
+  m_PrimaryLibraryGUID: 

@@ -10,17 +10,21 @@ public class PlayerMove : MonoBehaviour
     private Rigidbody2D mybody;
     private Animator myanimator;
 
-    
+
+    private bool flipped;
+
+
+
     void Awake()
     {
         mybody = GetComponent<Rigidbody2D>();
         myanimator = GetComponent<Animator>();
     }
 
-   
+
     void Update()
     {
-        
+        Attack();
     }
 
     void FixedUpdate()
@@ -37,19 +41,29 @@ public class PlayerMove : MonoBehaviour
         {
             myanimator.SetFloat("speed", h);
             mybody.velocity = new Vector2(speed, mybody.velocity.y);
+            if (flipped)
+            {
+                flipped = false;
+            }
         }
         else if (h < 0)
         {
-            
+
             mybody.velocity = new Vector2(-speed, mybody.velocity.y);
-            myanimator.SetFloat("speed", h*-1);
+            myanimator.SetFloat("speed", h * -1);
+            if (!flipped)
+            {
+                flipped = true;
+            }
         }
         else
         {
             myanimator.SetFloat("speed", 0);
             mybody.velocity = new Vector2(0f, mybody.velocity.y);
+           
         }
 
+        transform.localScale = new Vector3(flipped ? -1 : 1, 1, 1);
 
         float k = Input.GetAxisRaw("Vertical");
 
@@ -64,6 +78,14 @@ public class PlayerMove : MonoBehaviour
         else
         {
             mybody.velocity = new Vector2(mybody.velocity.x,0f);
+        }
+    }
+
+    void Attack()
+    {
+        if (Input.GetKeyDown(KeyCode.M)){
+
+            myanimator.SetTrigger("attack");
         }
     }
 }
