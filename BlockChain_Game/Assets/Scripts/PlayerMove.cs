@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,12 +8,12 @@ public class PlayerMove : MonoBehaviour
 
     public float speed = 5f;
 
+
     private Rigidbody2D mybody;
     private Animator myanimator;
 
 
     private bool flipped;
-
 
 
     void Awake()
@@ -60,7 +61,6 @@ public class PlayerMove : MonoBehaviour
         {
             myanimator.SetFloat("speed", 0);
             mybody.velocity = new Vector2(0f, mybody.velocity.y);
-           
         }
 
         transform.localScale = new Vector3(flipped ? -1 : 1, 1, 1);
@@ -77,13 +77,14 @@ public class PlayerMove : MonoBehaviour
         }
         else
         {
-            mybody.velocity = new Vector2(mybody.velocity.x,0f);
+            mybody.velocity = new Vector2(mybody.velocity.x, 0f);
         }
     }
 
     void Attack()
     {
-        if (Input.GetKeyDown(KeyCode.M)){
+        if (Input.GetKeyDown(KeyCode.M))
+        {
 
             myanimator.SetTrigger("attack");
         }
