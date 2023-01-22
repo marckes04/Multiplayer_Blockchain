@@ -12,6 +12,8 @@ public class Health : MonoBehaviour
     [SerializeField]
     private Image m_healthBar;
 
+    
+
     void Awake() {
         m_health = m_maxhealth;
     }
